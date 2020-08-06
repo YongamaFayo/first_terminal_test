@@ -8,9 +8,4 @@ describe('isFromBellville', function () {
         assert.equal(true, isFromBellville('CY 123'));
     });
 
-    it('should return false if registration does not start with CY', function () {
-        assert.equal(false, isFromBellville('CF 123'));
-    });
-
-
 });
