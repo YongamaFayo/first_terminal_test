@@ -9,10 +9,12 @@ describe('countRegNumber', function () {
         assert.equal(3, countRegNumber('CA 182736,CY 523519,CJ 812328'));
     });
 
-    it('should return true if the number of registrations exceed 3', function () {
+    //  The below test was to check if the 4th registration will make the test fail.
 
-        assert.equal( true, countRegNumber('CA 182736,CY 523519,CJ 812328,CA 5823'));
-    });
+    // it('should return true if the number of registrations exceed 3', function () {
+
+    //     assert.equal( true, countRegNumber('CA 182736,CY 523519,CJ 812328,CA 5823'));
+    // });
 
     
 
