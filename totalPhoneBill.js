@@ -10,9 +10,8 @@ module.exports = function (house) {
         } else if (price[i] == "sms") {
             total = total + sms;
         }
-
-
     }
+    console.log(total);
     return "R" + total.toFixed(2)
 }
  

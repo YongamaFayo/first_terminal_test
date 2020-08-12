@@ -1,6 +1,5 @@
 module.exports = function (reg) {
 
-    var bellville = "CY";
 
     if (reg.startsWith("CY")) {
         return "Bellville";
