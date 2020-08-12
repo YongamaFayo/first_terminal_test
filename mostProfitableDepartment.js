@@ -33,36 +33,3 @@ module.exports = function (profDep) {
   return depWinner
 };
 
-function mostProfitableDay(profDay) {
-  var dayMap = {}
-  for (var x = 0; x < profDay.length; x++) {
-    var sales = profDay[x].sales;
-    var day = profDay[x].day;
-    if (dayMap[day] === undefined) {
-      dayMap[day] = sales;
-    } else {
-      dayMap[day] += sales
-    }
-  }
-
-  console.log(dayMap)
-  var dayWinner = '';
-  var salesWinner = 0;
-  for (sales in dayMap) {
-    if (dayMap[sales] > salesWinner) {
-      salesWinner = dayMap[sales];
-      dayWinner = sales;
-    }
-  }
-
-  console.log(dayWinner)
-  return dayWinner
-};
-
-
-
-
-
-
-
-
