@@ -20,16 +20,16 @@ describe('fromWhere', function () {
         assert.equal('Some other place!', fromWhere('CC 333'));
     });
 
-    it('should return true if registration for Cape Town starts with "CC" ', function () {
-        assert.equal('Cape Town', fromWhere('CC 333'));
+    it('should return true if registration is from elsewhere', function () {
+        assert.equal('Some other place!', fromWhere('CC 333'));
     });
 
-    it('should return true if registration for Paarl starts with "CJ" ', function () {
-        assert.equal('Paarl', fromWhere('CA 878'));
+    it('should recognise if the registration is not from the listed', function () {
+        assert.equal('Some other place!', fromWhere('CK 878'));
     });
 
-    it('should return true if registration for Cape Town starts with "CA" ', function () {
-        assert.equal('Cape Town', fromWhere('CY 875'));
+    it('should assert if the registration is from other place', function () {
+        assert.equal('Some other place!', fromWhere('CQ 875'));
     });
 
 
