@@ -9,7 +9,7 @@ describe('allPaarl', function () {
     });
 
     it('should return false if registration does not start with CJ', function () {
-        assert.equal(false, allPaarl('CF 123'));
+        assert.equal(0, allPaarl('CF 123'));
     });
 
 
